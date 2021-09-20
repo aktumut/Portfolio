@@ -62,6 +62,7 @@ def project_actions(id):
         return redirect(url_for("projects"))
 
 
+
 @app.route("/dashboard/projects/new",methods=["GET","POST"])
 def new_project():
     if request.method=="POST":
