@@ -4,7 +4,7 @@ from uuid import uuid4
 
 
 def read_db():
-    db_path = "./util/db.csv"
+    db_path = "./app/util/db.csv"
     projects = []
     with open(db_path) as f:
         lines = f.readlines()

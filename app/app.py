@@ -1,10 +1,10 @@
 
 
 from flask import Flask,render_template,request,redirect,url_for,send_from_directory
-from constants.items import *
+from app.constants.items import *
 import os
 from werkzeug.utils import secure_filename
-from util.db import read_db,write_project,find_project_by_id,find_project_by_id_and_delete
+from app.util.db import read_db,write_project,find_project_by_id,find_project_by_id_and_delete
 app = Flask(__name__)
 
 app.config["UPLOAD_FOLDER"]="files"
