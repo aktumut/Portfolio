@@ -11,7 +11,7 @@
 
 .btn-outline-success{
     background-color:var(--main-bg-color);
-    color:var(--main-text-light);
+    color:var(--main-text-light );
 }
 .btn-outline-success:hover{
     background-color:var(--main-text-primary);
@@ -131,3 +131,4 @@ h1{
 th,td{
     color:var(--main-text-light);
 }
+

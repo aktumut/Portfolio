@@ -4,7 +4,7 @@ from uuid import uuid4
 
 
 def read_db():
-    db_path = "./app/util/db.csv"
+    db_path = "app/util/db.csv"
     projects = []
     with open(db_path) as f:
         lines = f.readlines()
@@ -18,7 +18,7 @@ def read_db():
 
 def write_project(title, description, cover, githubLink, liveLink,youtubelink):
     line = "{},{},{},{},{},{}".format(uuid4(), title, description, cover, githubLink, liveLink,youtubelink)
-    db_path = "./app/util/db.csv"
+    db_path = "app/util/db.csv"
     with open(db_path, 'r+') as f:
         lines = f.readlines()
         if(len(lines) == 0):
@@ -39,7 +39,7 @@ def find_project_by_id(id):
 
 
 def find_project_by_id_and_delete(id):
-    db_path = "./app/util/db.csv"
+    db_path = "app/util/db.csv"
     a_file = open(db_path, "r")
     lines = a_file.readlines()
     a_file.close()
