@@ -41,7 +41,7 @@ def projects():
 
 @app.route("/CV")
 def CV():
-    return render_template("/views/CV/index.html",APP_NAME=APP_NAME,DASHBOARD_MENU=DASHBOARD_MENU)
+    return render_template("/views/CV/index.html",APP_NAME=APP_NAME,MENU_ITEMS=MENU_ITEMS)
 
 
 
