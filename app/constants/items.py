@@ -24,8 +24,9 @@ SOCIAL_LINKS = [{
 
 
 
-MENU_ITEMS= [{"label":"About","link":"#about"},{"label":"Blog","link":"https://umutaktas.medium.com/"},{"label":"Projects","link":"#projects"},{"label":"CV","link":"/CV"},{"label":"Dashboard","link":"/dashboard"},]
+#MENU_ITEMS= [{"label":"About","link":"#about"},{"label":"Blog","link":"https://umutaktas.medium.com/"},{"label":"Projects","link":"#projects"},{"label":"CV","link":"/CV"},{"label":"Dashboard","link":"/dashboard"},]
 
+MENU_ITEMS= [{"label":"About","link":"#about"},{"label":"Blog","link":"https://umutaktas.medium.com/"},{"label":"Projects","link":"#projects"},{"label":"CV","link":"/CV"}]
 
 DASHBOARD_MENU= [
     {"label":"About","link":"/dashboard/about","variant":"danger","icon":"<i class='fas fa-user-cog'></i>"},
