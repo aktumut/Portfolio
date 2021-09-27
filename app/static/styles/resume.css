@@ -42,7 +42,6 @@ a#pdf:hover { background: #222; }
 
 
 
-
 .job { position: relative; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 0.063rem solid #ccc; }
 .job h4 { position: absolute; top: 0.35rem; right: 0 }
 .job p { margin: 0.75rem 0 3rem 0; }
