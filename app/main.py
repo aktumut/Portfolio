@@ -90,7 +90,11 @@ def file_actions(filename):
         return send_from_directory(path=app.root_path,directory=app.config["UPLOAD_FOLDER"],filename=filename)
 
 
-
-
+@app.route("/CV/glassdoor")
+def glassdoor():
+    workingdir = os.path.abspath(os.getcwd())
+    filepath = workingdir + '/app/static/assets/pdf/glassdoor.pdf'
+    return send_from_directory(filepath, 'glassdoor.pdf')
+#app\static\assets\pdf\
 if __name__ == '__main__':
     app.run(debug=True)
