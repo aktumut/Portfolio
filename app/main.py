@@ -94,7 +94,8 @@ def file_actions(filename):
 def glassdoor():
     workingdir = os.path.abspath(os.getcwd())
     filepath = workingdir + '/app/static/assets/pdf/glassdoor.pdf'
-    return send_from_directory(filepath, 'glassdoor.pdf')
+    #return send_from_directory(filepath, 'glassdoor.pdf')
+    return redirect( url_for('static', filename='/assets/pdf/glassdoor.pdf', _external=True))
 #app\static\assets\pdf\
 if __name__ == '__main__':
     app.run(debug=True)
