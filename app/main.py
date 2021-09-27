@@ -92,10 +92,11 @@ def file_actions(filename):
 
 @app.route("/CV/glassdoor")
 def glassdoor():
-    workingdir = os.path.abspath(os.getcwd())
-    filepath = workingdir + '/app/static/assets/pdf/glassdoor.pdf'
-    #return send_from_directory(filepath, 'glassdoor.pdf')
     return redirect( url_for('static', filename='/assets/pdf/glassdoor.pdf', _external=True))
-#app\static\assets\pdf\
+
+@app.route("/CV/resume_download")
+def resume_download():
+    return redirect( url_for('static', filename='/assets/pdf/resume.pdf', _external=True))
+
 if __name__ == '__main__':
     app.run(debug=True)
