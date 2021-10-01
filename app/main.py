@@ -98,5 +98,9 @@ def glassdoor():
 def resume_download():
     return redirect( url_for('static', filename='/assets/pdf/umut_aktas_resume.pdf', _external=True))
 
+@app.route("/CV/References_and_Papers")
+def references():
+    return redirect( url_for('static', filename='/assets/pdf/References_and_Papers.pdf', _external=True))
+
 if __name__ == '__main__':
     app.run(debug=True)
