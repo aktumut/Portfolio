@@ -16,6 +16,9 @@ def read_db():
     return projects
 
 
+
+
+
 def write_project(title, description, cover, githubLink, liveLink,youtubelink):
     line = "{},{},{},{},{},{}".format(uuid4(), title, description, cover, githubLink, liveLink,youtubelink)
     db_path = "app/util/db.csv"
